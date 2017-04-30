@@ -1,0 +1,32 @@
+//- inner page reference list
+mixin reference(list)
+  h3 Reference
+  ul.demo-reference-list
+    each val, index in list
+      li
+        a(href=index) #{val}
+
+//- inner page useful list
+mixin usefulList(list)
+  h3 Useful when you
+  ul.demo-reference-list
+    each val in list
+      li #{val}
+
+//- return back header
+mixin returnBack(title) 
+  header
+    .home
+      a(href="/") &#9664; Home
+    h1= title 
+
+//- demo controls
+mixin demoControls(id,content)
+  .demo
+    .demo-controls
+      input(id=id+'-id' type="text", placeholder="id" value="some-id")
+      button(id=id+'-button') #{content} the data!
+      p.demo-url URL:
+        span(id=id+'-url')
+    .demo-results
+      pre(id=id+'-data')

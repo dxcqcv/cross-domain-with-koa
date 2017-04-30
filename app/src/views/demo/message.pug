@@ -1,0 +1,23 @@
+extends ../layout/layout.pug
+include ../mixins/utility.pug
+
+block title
+  title window.postMessage() Demo
+
+block content
+  +returnBack('window.postMessage()')
+
+  +demoControls('get-message', 'GET')
+  +demoControls('post-message', 'POST')
+
+  .demo-reference
+    +usefulList([
+      'Supports IE8+',
+      'Need more methods other than GET',
+      'Crosses entirely different domains'
+    ])
+
+    +reference({
+    "https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage":'Window.postMessage() - Web API Interfaces | MDN'
+    })
+

@@ -1,0 +1,102 @@
+.index
+  text-decoration none
+  color #444
+  position fixed
+
+header
+  max-width 800px
+  margin 0 auto
+  position relative
+
+.demo,
+.demo-reference
+  max-width 800px
+  overflow hidden
+  margin auto
+  box-shadow 0 1px 4px rgba(0,0,0,0.3)
+  padding 20px
+
+.demo + .demo
+  margin-top 30px
+
+.demo-controls
+  text-align center
+  margin-top 26px
+  width 42%
+  float left
+  & input
+    font inherit
+    font-size 20px
+    height 30px
+    border-radius 2px
+    border 1px solid #bbb
+    padding 4px 8px
+    vertical-align middle
+    &[type=checkbox]
+      margin-left 20px
+  & button
+    font inherit
+    font-size 16px
+    display inline-block
+    border-radius 2px
+    border 1px solid transparent
+    padding 8px 16px
+    cursor pointer
+    margin-top 20px
+    color white
+    background-color #34c5c5
+    transition all 0.3s ease-in
+    width 232px
+    &:hover
+      background-color #5edbdb
+
+.demo-results
+  margin-top 20px
+  width 58%
+  float right
+  & pre
+    font-family monaco, menlo, consolas, monospace
+    font-size 16px
+    padding 20px
+    background-color #eee
+    margin auto
+    max-width 80%
+    min-height 70px
+    white-space pre-wrap
+
+.demo-explanation
+  text-align center
+  margin-bottom 40px
+  & code
+    background-color #eee
+    padding 1px 8px
+    margin 0 10px
+    border 1px solid #bbb
+    border-radius 3px
+
+.demo-url
+  font-family monaco, menlo, consolas, monospace
+  margin 10px
+
+.home 
+  & a
+    font-size 20px
+    color #444
+    &:link,
+    &:visited
+      text-decoration none
+    &:hover,
+    &:active
+      text-decoration underline
+
+.demo-reference
+  margin-top 30px
+  & h3
+    margin-left 30px
+
+.demo-reference-list
+  & li
+    margin-top 10px
+  & a
+    color #444
+

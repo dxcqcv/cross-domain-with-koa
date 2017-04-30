@@ -1,0 +1,29 @@
+extends ../layout/layout.pug
+include ../mixins/utility.pug
+
+block title
+  title document.domain Demo
+
+block content
+  +returnBack('document.domain')
+
+  .demo
+    p.demo-explanation You are on
+      code#current-domain
+      | and are about to communicate with
+      code#another-domain
+
+  +demoControls('get-domain','GET')
+  +demoControls('post-domain','POST')
+
+  .demo-reference
+    +usefulList([
+      'Needs to support old browsers',
+      'Needs more methods other than GET',
+      'Crosses subdomains and basedomains'
+    ])
+    +reference({
+      "https://developer.mozilla.org/en-US/docs/Web/API/Document/domain": 'Document.domain - Web API Interfaces | MDN',
+      "http://www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-2250147":'DOM Level 2 HTML: document.domain (describes it as read-only)',
+      "https://html.spec.whatwg.org/multipage/browsers.html#relaxing-the-same-origin-restriction":'HTML5 Living Standard: document.domain'
+    })

@@ -1,0 +1,39 @@
+extends ../layout/layout.pug
+include ../mixins/utility.pug
+
+block title
+  title CORS Demo
+
+block content 
+  +returnBack('CORS')
+
+  +demoControls('get-cors', 'GET')
+
+  .demo
+    .demo-controls
+      input#post-cors-id(type="text", placeholder="id" value="some-id")
+      button#post-cors-button POST the data!
+      div
+        input#post-cors-preflight(type="checkbox")
+        label(for="post-cors-preflight") preflight
+      p.demo-url URL:
+        span#post-cors-url
+    .demo-results
+      pre#post-cors-data
+
+  .demo-reference
+    +usefulList([
+      "Supports IE8+",
+      "Needs more methods other than GET",
+      "Needs custom headers",
+      "Needs to send Cookies",
+      "Crosses entirely different domains"
+    ])
+
+    +reference({
+      "https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS":"HTTP access control (CORS) - HTTP | MDN",
+      "https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy": "Same-origin policy | MDN",
+      "http://www.w3.org/TR/cors/": "W3C - Cross-Origin Resource Sharing",
+      "http://www.html5rocks.com/en/tutorials/cors":"Using CORS - HTML5 Rocks",
+      "https://wiki.mozilla.org/Security/Origin":"Security/Origin - MozillaWiki"
+    })

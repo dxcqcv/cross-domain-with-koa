@@ -1,0 +1,45 @@
+{
+  "name": "my-koa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --harmony server.js",
+    "wp": "webpack --display-error-details --config webpack.config.dev.js"
+  },
+  "keywords": [
+    "koa"
+  ],
+  "author": "Roy Shang",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babili-webpack-plugin": "^0.0.11",
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.0",
+    "html-webpack-harddisk-plugin": "^0.1.0",
+    "html-webpack-plugin": "^2.28.0",
+    "json-loader": "^0.5.4",
+    "kcors": "2.2.1",
+    "koa": "~2.2.0",
+    "koa-body": "2",
+    "koa-jsonp": "next",
+    "koa-logger": "^2.0.1",
+    "koa-router": "^7.1.1",
+    "koa-static": "^3.0.0",
+    "koa-views": "^6.0.1",
+    "koa-webpack": "^0.3.1",
+    "postcss-loader": "^1.3.3",
+    "pug": "^2.0.0-beta11",
+    "pug-loader": "^2.3.0",
+    "style-loader": "^0.16.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "webpack": "^2.4.1"
+  }
+}
