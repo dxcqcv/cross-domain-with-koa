@@ -1,5 +1,7 @@
 ## Walkthrough
 
+(Inspired by [cross-domain-with-koa](https://github.com/joyeecheung/cross-domain-with-koa))
+
 ### Before you start
 
 1. Edit your host file(on *nix system it's `/etc/hosts`, on Windows it's `C:\Windows\System32\drivers\etc\hosts`), make sure you have
